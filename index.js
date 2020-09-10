@@ -6,12 +6,14 @@ var hints = 3;
 var level = 0;
 var start = false;
 
-$(document).click(function(){
-    $("h2").slideUp();
-    if (!start){
-        next_elt_bot();
-        start = true;
-    } 
+$(document).click(function(evt){
+    if (evt.target!=button){
+        $("h2").slideUp();
+        if (!start){
+            next_elt_bot();
+            start = true;
+        } 
+    }
 });
 
 $(document).keydown(function(){
