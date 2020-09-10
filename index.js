@@ -16,6 +16,14 @@ $(document).click(function(evt){
     }
 });
 
+$(".start").click(function(){
+    $("h2").slideUp();
+    if (!start){
+        next_elt_bot();
+        start = true;
+    } 
+});
+
 $(document).keydown(function(){
     $("h2").slideUp();
     if (!start){
