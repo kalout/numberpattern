@@ -63,3 +63,16 @@ button:hover{
 .hint{
     font-size: .5rem;
 }
+
+.start{
+    visibility: hidden;
+}
+
+
+/*           */
+
+@media (max-width:1028px){
+    .start{
+        visibility: unset;
+    }
+}
